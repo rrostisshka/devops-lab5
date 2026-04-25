@@ -54,7 +54,7 @@ def test_create_user_with_invalid_email():
 
 def test_delete_user():
     '''Удаление пользователя'''
-     response = client.delete("/api/v1/user", params={'email': users[1]['email']})
+    response = client.delete("/api/v1/user", params={'email': users[1]['email']})
 
-     assert response.status_code == 204
-     assert response.text == ""
+    assert response.status_code == 204
+    assert response.text == ""
